@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cuidado Dual</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+function toggleTab(id) {
+const tab = document.getElementById(id);
+tab.classList.toggle("hidden");
+}
+</script>
+</head>
+<body class="bg-gray-50 font-sans">
+<!-- Header -->
+<header class="flex flex-col md:flex-row md:items-center md:justify-between bg-green-600 text-white p-8 shadow-lg">
+<div class="flex items-center space-x-3 mb-4 md:mb-0">
+<img src="logo.png" alt="Logo" class="h-16 w-16 rounded-full bg-white p-1">
+<h1 class="text-3xl font-bold">Cuidado Dual</h1>
+</div>
+<p class="italic font-light text-lg text-center md:text-right">“Una línea, dos especies, mismo bienestar.”</p>
+</header>
+
+
+<!-- Tabs -->
+<section class="max-w-4xl mx-auto mt-6 p-4">
+<div class="space-y-2">
+<button onclick="toggleTab('mision')" class="w-full text-left bg-white shadow-md p-3 rounded-lg font-semibold hover:bg-green-100">Misión</button>
+<div id="mision" class="hidden bg-white p-4 rounded-lg shadow-inner">
+Crear productos de cuidado personal y animal, que combinen ciencia y naturaleza promoviendo bienestar, salud y sostenibilidad, en cada fórmula, tanto para personas como para sus fieles compañeros caninos.
+</div>
+
+
+<button onclick="toggleTab('vision')" class="w-full text-left bg-white shadow-md p-3 rounded-lg font-semibold hover:bg-green-100">Visión</button>
+<div id="vision" class="hidden bg-white p-4 rounded-lg shadow-inner">
+Ser una marca reconocida por su compromiso con la innovación consciente respecto a la piel, el medioambiente y la conexión entre personas y animales, ofreciendo productos que cuidan con confianza y ética.
+</div>
+
+
+<button onclick="toggleTab('valores')" class="w-full text-left bg-white shadow-md p-3 rounded-lg font-semibold hover:bg-green-100">Valores</button>
+<div id="valores" class="hidden bg-white p-4 rounded-lg shadow-inner">
+<ul class="list-disc pl-6">
+<li><strong>Cuidado consciente:</strong> pensamos en cada piel humana o canina.</li>
+<li>Innovación responsable.</li>
+<li>Sostenibilidad y respeto por la naturaleza.</li>
+</ul>
+</div>
+</div>
+</section>
+
+
+<!-- Productos -->
+<section class="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto mt-10 p-4">
+<!-- Desodorante -->
+<div class="bg-white rounded-2xl shadow-lg p-6 hover:shadow-2xl transition">
+<h2 class="text-xl font-bold mb-3 text-green-700">Desodorante a base de frutas</h2>
+<p class="text-gray-600 mb-3">Un desodorante natural que combina extractos frutales y ciencia para brindar frescura, cuidado y protección sin dañar tu piel ni el planeta.</p>
+<button class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700">Conoce más</button>
+</div>
+
+
+<!-- Acondicionador para perros -->
+<div class="bg-white rounded-2xl shadow-lg p-6 hover:shadow-2xl transition">
+<h2 class="text-xl font-bold mb-3 text-green-700">Acondicionador para perros</h2>
+<p class="text-gray-600 mb-3">Formulado con ingredientes naturales, nutre y suaviza el pelaje de tu perro mientras cuida su piel sensible, promoviendo salud y bienestar.</p>
+<button class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700">Conoce más</button>
+</div>
+</section>
+
+
+<!-- Footer -->
+<footer class="bg-green-700 text-white text-center p-4 mt-10">
+<p>&copy; 2025 Cuidado Dual. Todos los derechos reservados.</p>
+</footer>
+</body>
+</html>
